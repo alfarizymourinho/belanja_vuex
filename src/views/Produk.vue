@@ -7,7 +7,7 @@
         </div>
     </div>
     <div v-else>
-        <div class="grid md:grid-cols-3 gap-8  mt-10 pl-5">
+        <div class="grid md:grid-cols-3 gap-8  mt-10 pl-5" style="background-color: silver;">
             <div v-for="product in getProduk" :key="product.slug">
                 <div class="relative m-10 w-full max-w-xs overflow-hidden rounded-lg bg-white shadow-md">
                     <a href="#">
@@ -17,7 +17,7 @@
                     </a>
                     <span
                         class="absolute top-0 left-0 w-28 translate-y-4 -translate-x-6 -rotate-45 bg-black text-center text-sm text-white">Sale</span>
-                    <div class="mt-4 px-5 pb-5">
+                    <div class="mt-4 px-5 pb-5" style="background-color: gray;">
                         <a href="#">
                             <h5 class="text-xl font-semibold tracking-tight text-slate-900">{{ product.name }}</h5>
                         </a>

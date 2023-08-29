@@ -1,44 +1,98 @@
 <template>
-    <div class="p-16">
-        <div class="p-8 bg-white shadow mt-24">
-            <div class="grid grid-cols-1 md:grid-cols-3">
-                <div class="grid grid-cols-3 text-center order-last md:order-first mt-20 md:mt-0">
-                    <div>
-                        <p class="font-bold text-gray-700 text-xl">22</p>
-                        <p class="text-gray-400">Friends</p>
-                    </div>
-                    <div>
-                        <p class="font-bold text-gray-700 text-xl">10</p>
-                        <p class="text-gray-400">Photos</p>
-                    </div>
-                    <div>
-                        <p class="font-bold text-gray-700 text-xl">89</p>
-                        <p class="text-gray-400">Comments</p>
+    <link rel="stylesheet" href="https://demos.creative-tim.com/notus-js/assets/styles/tailwind.css">
+    <link rel="stylesheet"
+        href="https://demos.creative-tim.com/notus-js/assets/vendor/@fortawesome/fontawesome-free/css/all.min.css">
+
+    <main class="profile-page">
+        <section class="relative block h-500-px">
+            <div class="absolute top-0 w-full h-full bg-center bg-cover" style="
+    background-image: url('https://img2.beritasatu.com/cache/beritasatu/480x310-3/2023/06/1687925770-1080x607.webp');">
+    <span id="blackOverlay" class="w-full h-full absolute opacity-50 bg-black"></span>
+</div>
+
+            <div class="top-auto bottom-0 left-0 right-0 w-full absolute pointer-events-none overflow-hidden h-70-px"
+                style="transform: translateZ(0px)">
+                <svg class="absolute bottom-0 overflow-hidden" xmlns="http://www.w3.org/2000/svg" preserveAspectRatio="none"
+                    version="1.1" viewBox="0 0 2560 100" x="0" y="0">
+                    <polygon class="text-blueGray-200 fill-current" points="2560 0 2560 100 0 100"></polygon>
+                </svg>
+            </div>
+        </section>
+        <section class="relative py-16 bg-blueGray-200">
+            <div class="container mx-auto px-4">
+                <div class="relative flex flex-col min-w-0 break-words bg-white w-full mb-6 shadow-xl rounded-lg -mt-64">
+                    <div class="px-6">
+                        <div class="flex flex-wrap justify-center">
+                            <div class="w-full lg:w-3/12 px-4 lg:order-2 flex justify-center">
+                                <div class="relative">
+                                    <img alt="..."
+                                        src="https://img2.beritasatu.com/cache/beritasatu/480x310-3/2023/06/1687925770-1080x607.webp"
+                                        class="shadow-xl rounded-full h-auto align-middle border-none absolute -m-16 -ml-20 lg:-ml-16 max-w-150-px">
+                                </div>
+                            </div>
+                            <div class="w-full lg:w-4/12 px-4 lg:order-3 lg:text-right lg:self-center">
+                                <div class="py-6 px-3 mt-32 sm:mt-0">
+                                    <button
+                                        class="bg-pink-500 active:bg-pink-600 uppercase text-white font-bold hover:shadow-md shadow text-xs px-4 py-2 rounded outline-none focus:outline-none sm:mr-2 mb-1 ease-linear transition-all duration-150"
+                                        type="button">
+                                        Connect
+                                    </button>
+                                </div>
+                            </div>
+                            <div class="w-full lg:w-4/12 px-4 lg:order-1">
+                                <div class="flex justify-center py-4 lg:pt-4 pt-8">
+                                    <div class="mr-4 p-3 text-center">
+                                        <span
+                                            class="text-xl font-bold block uppercase tracking-wide text-blueGray-600">22</span><span
+                                            class="text-sm text-blueGray-400">Friends</span>
+                                    </div>
+                                    <div class="mr-4 p-3 text-center">
+                                        <span
+                                            class="text-xl font-bold block uppercase tracking-wide text-blueGray-600">10</span><span
+                                            class="text-sm text-blueGray-400">Photos</span>
+                                    </div>
+                                    <div class="lg:mr-4 p-3 text-center">
+                                        <span
+                                            class="text-xl font-bold block uppercase tracking-wide text-blueGray-600">89</span><span
+                                            class="text-sm text-blueGray-400">Comments</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="text-center mt-12">
+                            <h3 class="text-4xl font-semibold leading-normal mb-2 text-blueGray-700 mb-2">
+                                {{ getUsers.name }}
+                            </h3>
+                            <div class="mb-2 text-blueGray-600">
+                                <i class="fas fa-envelope mr-2 text-lg text-blueGray-400"></i>
+                                {{ getUsers.email }}
+                            </div>
+
+                            <div class="mb-2 text-blueGray-600">
+                                <i class="fas fa-map-marker-alt mr-2 text-lg text-blueGray-400"></i>
+                                Jawa Barat, Bandung, Kab Bandung, kecamatan Margahayu, Desa Sayati, RT 05 RW 07 NO 18
+                            </div>
+                            <div class="mb-2 text-blueGray-600">
+                                <i class="fas fa-phone mr-2 text-lg text-blueGray-400"></i>082115543132
+                            </div>
+                        </div>
+                        <div class="mt-10 py-10 border-t border-blueGray-200 text-center">
+                            <div class="flex flex-wrap justify-center">
+                                <div class="w-full lg:w-9/12 px-4">
+                                    <p class="mb-4 text-lg leading-relaxed text-blueGray-700">
+                                        Website produk kecantikan, meyediakan berbagai macam produk kecantikan dalam berbagai macam tipe dan jenis produk yang dapat di temukan dengan meyesuaikan dengan kebutuhan costumer.
+                                    </p>
+                                    <a href="/produk" class="font-normal text-pink-500">Show Product</a>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
-                <div class="relative">
-                    <div
-                        class="w-48 h-48 bg-indigo-100 mx-auto rounded-full shadow-2xl absolute inset-x-0 top-0 -mt-24 flex items-center justify-center text-indigo-500">
-                    <svg xmlns="http://www.w3.org/2000/svg" class="h-24 w-24" viewBox="0 0 20 20" fill="currentColor">
-                        <path fill-rule="evenodd" d="M10 9a3 3 0 100-6 3 3 0 000 6zm-7 9a7 7 0 1114 0H3z"
-                            clip-rule="evenodd" />
-                    </svg> </div>
             </div>
-            <div class="space-x-8 flex justify-between mt-32 md:mt-0 md:justify-center"><button
-                    class="text-white py-2 px-4 uppercase rounded bg-blue-400 hover:bg-blue-500 shadow hover:shadow-lg font-medium transition transform hover:-translate-y-0.5">
-                    Connect</button> <button
-                    class="text-white py-2 px-4 uppercase rounded bg-gray-700 hover:bg-gray-800 shadow hover:shadow-lg font-medium transition transform hover:-translate-y-0.5">
-                    Message</button> </div>
-        </div>
-        <div class="mt-20 text-center border-b pb-12">
-            <h1 class="text-4xl font-medium text-gray-700">{{ getUsers.name }}</h1>
-            <p class="font-light text-gray-600 mt-3">{{ getUsers.email }}</p>
-            <p class="mt-8 text-gray-500">Solution Manager - Creative Tim Officer</p>
-            <p class="mt-2 text-gray-500">University of Computer Science</p>
-        </div>
-        
-    </div>
-</div></template>
+           
+        </section>
+    </main>
+</template>
 <script>
 import { mapGetters, mapActions } from 'vuex';
 

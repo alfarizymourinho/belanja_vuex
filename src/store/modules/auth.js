@@ -55,6 +55,7 @@ const auth = {
       window.location.href = "/login";
     },
   },
+  
   mutations: {
     SET_TOKEN(state, token) {
       state.token = token;
