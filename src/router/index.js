@@ -4,7 +4,7 @@ import home from "../views/Home.vue";
 import Register from "../views/Register.vue";
 import Produk from "../views/Produk.vue";
 import singleproduk from "../views/SingleProduk.vue"
-import keranjang from "../views/keranjang.vue"
+import keranjang from "../views/Keranjang.vue"
 import category from "../views/Category.vue"
 import brands from "../views/Brands.vue"
 import profil from "../views/Profil.vue"
